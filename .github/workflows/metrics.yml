@@ -13,4 +13,34 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
+          # Your Github token
           token: ${{ secrets.METRICS_TOKEN }}
+
+          # Options
+          user: slugb0t
+          template: classic
+
+          # Base content:
+          base: header, activity, community, repositories, metadata
+          base_indepth: yes
+          repositories_affiliations: owner, collaborator, organization_memeber
+
+          # Timezone used by metrics
+          config_timezone: America/Los_Angeles
+
+          # Render display width
+          config_display: large
+
+          # Enable SVG CSS animations
+          config_animations: yes
+
+          # Number of retries in case rendering fails
+          retries: 3
+
+          # Time to wait (in seconds) before each retry
+          retries_delay: 300
+
+          # Ensure SVG can be correctly parsed after generation
+          verify: yes
+
+          
