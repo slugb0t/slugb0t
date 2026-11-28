@@ -13,8 +13,6 @@ I'm a research software developer at the [FAIR Data Innovations Hub](https://fai
 
 My work spans GitHub automation, metadata extraction and validation, and web and desktop applications for researchers. I care about clear documentation, reproducible workflows, and software people can inspect and build on.
 
-[Website](https://dorianportillo.dev) · [Blog](https://dorianportillo.dev/blog) · [Email](mailto:wheresdorian@gmail.com)
-
 ## Selected work
 
 - **[Codefair](https://codefair.io) | Project lead** - I lead development of a GitHub App and web platform that helps maintainers improve research software metadata, automate FAIR checks, and archive releases. [Source](https://github.com/fairdataihub/codefair-app) · [Docs](https://docs.codefair.io)
