@@ -1,0 +1,344 @@
+{
+  "description": "Curated tools used across research, desktop, web, and personal projects. Evidence supports use, not proficiency scores. New dependencies require review before becoming profile claims.",
+  "groups": [
+    {
+      "id": "interfaces",
+      "title": "Web and desktop"
+    },
+    {
+      "id": "data",
+      "title": "Data and APIs"
+    },
+    {
+      "id": "delivery",
+      "title": "Delivery and infrastructure"
+    },
+    {
+      "id": "additional",
+      "title": "Also used across projects",
+      "collapsed": true
+    }
+  ],
+  "sources": {
+    "codefair-ui": {
+      "repository": "fairdataihub/codefair-app",
+      "path": "ui/package.json"
+    },
+    "codefair-validator": {
+      "repository": "fairdataihub/codefair-app",
+      "path": "validator/requirements.txt"
+    },
+    "codefair-deploy": {
+      "repository": "fairdataihub/codefair-app",
+      "path": ".github/workflows/deploy-main.yml"
+    },
+    "codefair-container": {
+      "repository": "fairdataihub/codefair-app",
+      "path": "ui/Dockerfile"
+    },
+    "posters-ui": {
+      "repository": "fairdataihub/posters-science",
+      "path": "package.json"
+    },
+    "poster2json": {
+      "repository": "fairdataihub/poster2json",
+      "path": "pyproject.toml"
+    },
+    "soda": {
+      "repository": "fairdataihub/SODA-for-SPARC",
+      "path": "package.json"
+    },
+    "hermes-api": {
+      "repository": "slugb0t/hermes-control-center",
+      "path": "apps/api/requirements.txt"
+    }
+  },
+  "tools": [
+    {
+      "id": "typescript",
+      "label": "TypeScript",
+      "icon": "typescript",
+      "group": "interfaces",
+      "url": "https://www.typescriptlang.org/",
+      "evidence": [
+        {
+          "source": "codefair-ui",
+          "contains": "typescript"
+        }
+      ]
+    },
+    {
+      "id": "javascript",
+      "label": "JavaScript",
+      "icon": "javascript",
+      "group": "interfaces",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "evidence": [
+        {
+          "source": "codefair-ui",
+          "contains": "vue-router"
+        }
+      ]
+    },
+    {
+      "id": "vue",
+      "label": "Vue.js",
+      "icon": "vuedotjs",
+      "group": "interfaces",
+      "url": "https://vuejs.org/",
+      "evidence": [
+        {
+          "source": "codefair-ui",
+          "contains": "\"vue\""
+        }
+      ]
+    },
+    {
+      "id": "nuxt",
+      "label": "Nuxt",
+      "icon": "nuxt",
+      "group": "interfaces",
+      "url": "https://nuxt.com/",
+      "evidence": [
+        {
+          "source": "codefair-ui",
+          "contains": "\"nuxt\""
+        }
+      ]
+    },
+    {
+      "id": "tailwind",
+      "label": "Tailwind CSS",
+      "icon": "tailwindcss",
+      "group": "interfaces",
+      "url": "https://tailwindcss.com/",
+      "evidence": [
+        {
+          "source": "posters-ui",
+          "contains": "tailwindcss"
+        }
+      ]
+    },
+    {
+      "id": "electron",
+      "label": "Electron",
+      "icon": "electron",
+      "group": "interfaces",
+      "url": "https://www.electronjs.org/",
+      "evidence": [
+        {
+          "source": "soda",
+          "contains": "\"electron\""
+        }
+      ]
+    },
+    {
+      "id": "python",
+      "label": "Python",
+      "icon": "python",
+      "group": "data",
+      "url": "https://www.python.org/",
+      "evidence": [
+        {
+          "source": "poster2json",
+          "contains": "python"
+        }
+      ]
+    },
+    {
+      "id": "flask",
+      "label": "Flask",
+      "icon": "flask",
+      "group": "data",
+      "url": "https://flask.palletsprojects.com/",
+      "evidence": [
+        {
+          "source": "codefair-validator",
+          "contains": "Flask"
+        }
+      ]
+    },
+    {
+      "id": "postgresql",
+      "label": "PostgreSQL",
+      "icon": "postgresql",
+      "group": "data",
+      "url": "https://www.postgresql.org/",
+      "evidence": [
+        {
+          "source": "posters-ui",
+          "contains": "\"pg\""
+        }
+      ]
+    },
+    {
+      "id": "prisma",
+      "label": "Prisma",
+      "icon": "prisma",
+      "group": "data",
+      "url": "https://www.prisma.io/",
+      "evidence": [
+        {
+          "source": "codefair-ui",
+          "contains": "prisma"
+        }
+      ]
+    },
+    {
+      "id": "pytorch",
+      "label": "PyTorch",
+      "icon": "pytorch",
+      "group": "data",
+      "url": "https://pytorch.org/",
+      "evidence": [
+        {
+          "source": "poster2json",
+          "contains": "torch"
+        }
+      ]
+    },
+    {
+      "id": "transformers",
+      "label": "Transformers",
+      "icon": "huggingface",
+      "group": "data",
+      "url": "https://huggingface.co/docs/transformers/",
+      "evidence": [
+        {
+          "source": "poster2json",
+          "contains": "transformers"
+        }
+      ]
+    },
+    {
+      "id": "docker",
+      "label": "Docker",
+      "icon": "docker",
+      "group": "delivery",
+      "url": "https://www.docker.com/",
+      "evidence": [
+        {
+          "source": "codefair-container",
+          "contains": "FROM node:"
+        }
+      ]
+    },
+    {
+      "id": "github-actions",
+      "label": "GitHub Actions",
+      "icon": "githubactions",
+      "group": "delivery",
+      "url": "https://docs.github.com/en/actions",
+      "evidence": [
+        {
+          "source": "codefair-deploy",
+          "contains": "actions/checkout"
+        }
+      ]
+    },
+    {
+      "id": "octokit",
+      "label": "Octokit",
+      "icon": "github",
+      "group": "delivery",
+      "url": "https://octokit.github.io/",
+      "evidence": [
+        {
+          "source": "codefair-ui",
+          "contains": "octokit"
+        }
+      ]
+    },
+    {
+      "id": "git",
+      "label": "Git",
+      "icon": "git",
+      "group": "delivery",
+      "url": "https://git-scm.com/",
+      "evidence": [
+        {
+          "source": "codefair-deploy",
+          "contains": "actions/checkout"
+        }
+      ]
+    },
+    {
+      "id": "linux",
+      "label": "Linux",
+      "icon": "linux",
+      "group": "delivery",
+      "url": "https://www.kernel.org/",
+      "evidence": [
+        {
+          "source": "codefair-container",
+          "contains": "alpine"
+        }
+      ]
+    },
+    {
+      "id": "azure-acr",
+      "label": "Azure ACR",
+      "icon": "microsoftazure",
+      "group": "delivery",
+      "url": "https://learn.microsoft.com/en-us/azure/container-registry/",
+      "evidence": [
+        {
+          "source": "codefair-deploy",
+          "contains": "azure/docker-login"
+        }
+      ]
+    },
+    {
+      "id": "kamal",
+      "label": "Kamal",
+      "icon": null,
+      "group": "delivery",
+      "url": "https://kamal-deploy.org/",
+      "evidence": [
+        {
+          "source": "codefair-deploy",
+          "contains": "kamal"
+        }
+      ]
+    },
+    {
+      "id": "react",
+      "label": "React",
+      "icon": "react",
+      "group": "additional",
+      "url": "https://react.dev/",
+      "evidence": [
+        {
+          "source": "soda",
+          "contains": "\"react\""
+        }
+      ]
+    },
+    {
+      "id": "nodejs",
+      "label": "Node.js",
+      "icon": "nodedotjs",
+      "group": "additional",
+      "url": "https://nodejs.org/",
+      "evidence": [
+        {
+          "source": "codefair-container",
+          "contains": "FROM node:"
+        }
+      ]
+    },
+    {
+      "id": "fastapi",
+      "label": "FastAPI",
+      "icon": "fastapi",
+      "group": "additional",
+      "url": "https://fastapi.tiangolo.com/",
+      "evidence": [
+        {
+          "source": "hermes-api",
+          "contains": "fastapi"
+        }
+      ]
+    }
+  ]
+}

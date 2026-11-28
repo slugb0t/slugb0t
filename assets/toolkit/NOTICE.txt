@@ -1,0 +1,5 @@
+Brand icons: Simple Icons, distributed through @iconify-json/simple-icons 1.2.84.
+Source: https://github.com/simple-icons/simple-icons
+Icon collection license: CC0-1.0, https://creativecommons.org/publicdomain/zero/1.0/
+Brand names and marks belong to their respective owners.
+Badge layout and labels are maintained in this repository.
