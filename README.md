@@ -72,6 +72,6 @@ My work spans GitHub automation, metadata extraction and validation, and web and
 
 **Research workflows:** FAIR metadata · JSON Schema / JSON-LD · DOI / DataCite · ROR · SPDX
 
-## Away from the issue tracker
+## Away from the screen
 
 Music, writing, creative coding, and personal interfaces. I care about open science, digital privacy, and making useful software feel personal.
